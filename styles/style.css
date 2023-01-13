@@ -72,6 +72,10 @@ hr {
     list-style: none;
 }
 
+.nav-menu li:hover{
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
 /* top players styles */
 .top-players {
     margin-bottom: 20px;
@@ -206,7 +210,24 @@ hr {
  ------------------------*/
 
 /* for smaller device */
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 576px) {
+    .nav{
+        flex-direction: column;
+        padding: 0 30px;
+        height: 165px;
+        justify-content: flex-start;
+    }
+    .logo h2{
+        margin: 25px 0 0;
+    }
+    .nav-menu{
+        margin-top: 10px 0;
+        padding-left: 30px;
+    }
+}
+
+/* medium device */
+@media only screen and (max-width: 768px) {
     .nav {
         padding: 0 30px;
     }
@@ -229,8 +250,8 @@ hr {
 
 }
 
-/* for medium device */
-@media only screen and (min-width: 688px) and (max-width: 992px) {
+/* tablet device */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     .nav {
         padding: 0 30px;
     }
@@ -252,6 +273,7 @@ hr {
     }
 }
 
+/* desktop or laptop device */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .nav {
         padding: 0 30px;
